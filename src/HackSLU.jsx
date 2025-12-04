@@ -4,8 +4,11 @@ import { useParticles, ParticleEffect } from "./ParticleSystem";
 
 // Import images so Vite bundles them and rewrites URLs for production
 import mascot from "./assets/mascot.png";
-import mascotWithArch from "./mascotwitharch.png";
-import reactSvg from "./assets/react.svg";
+import image1 from "./assets/images/image1.jpg";
+import image2 from "./assets/images/image2.jpg";
+import image3 from "./assets/images/image3.jpg";
+import image4 from "./assets/images/image4.jpg";
+import image5 from "./assets/images/image5.jpg";
 
 export default function HackSLU() {
   const [showNav, setShowNav] = useState(false);
@@ -17,9 +20,11 @@ export default function HackSLU() {
 
   // images for sliders (use imported assets so Vite emits and rewrites them)
   const slides = [
-    { id: 1, url: mascotWithArch, alt: 'mascot with arch' },
-    { id: 2, url: mascot, alt: 'mascot' },
-    { id: 3, url: reactSvg, alt: 'react logo' },
+    { id: 1, url: image1, alt: '2025 Winners' },
+    { id: 2, url: image2, alt: '2025 Volunteer Team' },
+    { id: 3, url: image3, alt: '2025 hackSLU Planning Committee' },
+    { id: 4, url: image4, alt: 'hackSLU Speaker Group Photo' },
+    { id: 5, url: image5, alt: 'Hacking in Progress' },
   ];
 
   useEffect(() => {
@@ -120,6 +125,13 @@ export default function HackSLU() {
               sponsors
             </a>*/}
             <a 
+              href="#volunteer" 
+              onClick={(e) => scrollToSection(e, 'volunteer')}
+              className="hover:text-blue-400 transition-colors cursor-pointer font-semibold"
+            >
+              volunteer
+            </a>
+            <a 
               href="#contact" 
               onClick={(e) => scrollToSection(e, 'contact')}
               className="hover:text-blue-400 transition-colors cursor-pointer font-semibold"
@@ -143,6 +155,7 @@ export default function HackSLU() {
             <h1 className="text-8xl font-black text-blue-500 animate-pulse">
               hackSLU
             </h1>
+            <h3 className="text-3xl font-bold text-center mb-6">February 21 - 22, 2026</h3>
           </div>
           
           {/* Navigation menu */}
@@ -332,8 +345,8 @@ export default function HackSLU() {
         <h3 className="text-3xl font-bold text-center mb-6">Contact Us</h3>
         <p className="text-center text-lg">Have questions? Reach out to our team:</p>
         <div className="text-center mt-4">
-          <a href="mailto:hackslu@slu.edu" className="text-blue-400 underline text-xl font-semibold hover:text-blue-300">
-            hackslu@slu.edu
+          <a href="mailto:hackslu.info@gmail.com" className="text-blue-400 underline text-xl font-semibold hover:text-blue-300">
+            hackslu.info@gmail.com
           </a>
         </div>
       </section>
