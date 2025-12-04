@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./HackSLU.css";
 import { useParticles, ParticleEffect } from "./ParticleSystem";
 
+// Import images so Vite bundles them and rewrites URLs for production
+import mascot from "./assets/mascot.png";
+import mascotWithArch from "./mascotwitharch.png";
+import reactSvg from "./assets/react.svg";
+
 export default function HackSLU() {
   const [showNav, setShowNav] = useState(false);
   const [selectedItem, setSelectedItem] = useState('signup'); 
@@ -10,13 +15,11 @@ export default function HackSLU() {
   // Use particle system hook
   const particles = useParticles(50);
 
-  // images for sliders
+  // images for sliders (use imported assets so Vite emits and rewrites them)
   const slides = [
-    { id: 1, url: './assets/images/image1.jpg', alt: 'image1' },
-    { id: 2, url: './assets/images/image2.jpg', alt: 'image2' },
-    { id: 3, url: './assets/images/image5.jpg', alt: 'image3' },
-    { id: 4, url: './assets/images/image3.jpg', alt: 'image4' },
-    { id: 5, url: './assets/images/image4.jpg', alt: 'image5' },
+    { id: 1, url: mascotWithArch, alt: 'mascot with arch' },
+    { id: 2, url: mascot, alt: 'mascot' },
+    { id: 3, url: reactSvg, alt: 'react logo' },
   ];
 
   useEffect(() => {
@@ -81,7 +84,7 @@ export default function HackSLU() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <img 
-              src="./assets/mascot.png" 
+              src={mascot} 
               alt="HackSLU Logo" 
               className="w-10 h-10 rounded-lg flex-shrink-0"
             />
@@ -133,7 +136,7 @@ export default function HackSLU() {
           {/* Logo and Title */}
           <div className="flex items-center justify-center gap-6 mb-8">
             <img 
-              src="./assets/mascot.png" 
+              src={mascot} 
               alt="HackSLU Logo" 
               className="w-32 h-32 rounded-lg flex-shrink-0"
             />
