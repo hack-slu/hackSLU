@@ -12,11 +12,11 @@ export default function HackSLU() {
 
   // images for sliders
   const slides = [
-    { id: 1, url: 'src/assets/images/image1.jpg', alt: 'image1' },
-    { id: 2, url: 'src/assets/images/image2.jpg', alt: 'image2' },
-    { id: 3, url: 'src/assets/images/image5.jpg', alt: 'image3' },
-    { id: 4, url: 'src/assets/images/image3.jpg', alt: 'image4' },
-    { id: 5, url: 'src/assets/images/image4.jpg', alt: 'image5' },
+    { id: 1, url: './assets/images/image1.jpg', alt: 'image1' },
+    { id: 2, url: './assets/images/image2.jpg', alt: 'image2' },
+    { id: 3, url: './assets/images/image5.jpg', alt: 'image3' },
+    { id: 4, url: './assets/images/image3.jpg', alt: 'image4' },
+    { id: 5, url: './assets/images/image4.jpg', alt: 'image5' },
   ];
 
   useEffect(() => {
@@ -81,7 +81,7 @@ export default function HackSLU() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <img 
-              src="src/assets/mascot.png" 
+              src="./assets/mascot.png" 
               alt="HackSLU Logo" 
               className="w-10 h-10 rounded-lg flex-shrink-0"
             />
