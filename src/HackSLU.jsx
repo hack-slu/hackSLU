@@ -93,7 +93,7 @@ export default function HackSLU() {
               alt="HackSLU Logo" 
               className="w-10 h-10 rounded-lg flex-shrink-0"
             />
-          <h1 className="text-2xl font-black text-white">HackSLU 2026</h1>
+          <h1 className="text-2xl font-black text-white">hackSLU 2026</h1>
           </div>
           <div className="flex space-x-6">
             <a 
@@ -242,6 +242,7 @@ export default function HackSLU() {
                   src={slide.url}
                   alt={slide.alt}
                   className="w-full h-full object-cover"
+                  style={{ maxBlockSize: '32rem' }}
                 />
               </div>
             ))}
@@ -307,17 +308,42 @@ export default function HackSLU() {
         <div className="space-y-6">
           <div>
             <h4 className="font-semibold text-xl">Who can participate?</h4>
-            <p className="mt-2 text-lg">All students are welcome, no prior experience needed!</p>
+            <p className="mt-2 text-lg">All students, both undergrads and grads, are welcome, no prior experience is needed!</p>
           </div>
 
-          <div>
+          {/* <div>
             <h4 className="font-semibold text-xl">Is there a cost?</h4>
             <p className="mt-2 text-lg">Nope! It's completely free to participate.</p>
-          </div>
+          </div> */}
 
           <div>
             <h4 className="font-semibold text-xl">Is HackSLU 2026 in person?</h4>
-            <p className="mt-2 text-lg">Yes, it will be held on Saint Louis University's campus.</p>
+            <p className="mt-2 text-lg">Yes, it will be held on Saint Louis University's campus in St. Louis, MO. More information on specific buildings to come soon.</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-xl">What if I don't have a team?</h4>
+            <p className="mt-2 text-lg">No worries! We'll have a team formation session at the night before the event to help you find teammates. You can even find teammates during the hackathon itself!</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-xl">What should I bring?</h4>
+            <p className="mt-2 text-lg">Bring your laptop, charger, any other gear you need to code, and supplies for overnight. Don't forget your student ID for check-in!</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-xl">Will there be food?</h4>
+            <p className="mt-2 text-lg">Absolutely! We'll provide meals, snacks, and drinks throughout the event to keep you fueled.</p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-xl">Do I have to stay at the hackathon overnight?</h4>
+            <p className="mt-2 text-lg">No, staying overnight is optional. You can choose to leave and come back the next day if you prefer.</p>
+          </div>
+          
+          <div>
+            <h4 className="font-semibold text-xl">Who can I contact for more questions?</h4>
+            <p className="mt-2 text-lg">Feel free to reach out to us at <a href="mailto:hackslu.info@gmail.com" className="text-blue-400 underline hover:text-blue-300">hackslu.info@gmail.com</a> for any additional inquiries.</p>
           </div>
         </div>
       </section>
